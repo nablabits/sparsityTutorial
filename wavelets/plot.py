@@ -35,8 +35,8 @@ def stem_plot(data, x_vals=None, title=None, imag=True, ylim=None, xlab=None,
     if ylim is None:
         ylim = (-1, 2.5)
 
-    (markers, stemlines, baseline) = plt.stem(x_vals, np.real(data),
-                                              label='Real')
+    (markers, stemlines, baseline) = plt.stem(
+        x_vals, np.real(data), use_line_collection=True, label='Real')
     plt.setp(stemlines, linestyle="-", color="grey", linewidth=0.5)
     plt.setp(markers, marker='o', color="#19C3F5")
     plt.setp(baseline, linestyle="--", color="grey", linewidth=2)
