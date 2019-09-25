@@ -1,6 +1,6 @@
 # Key Ideas for wavelets
 
-## A.Fourier Transforms and their problems with time
+## Part A.Fourier Transforms and their problems with time
 
 * Fourier transforms are nice when it comes to get frequencies but we are missing the time information, that is, we don't know when they've occurred.
 
@@ -14,10 +14,26 @@
 
 > It's not possible to simultaneously sharply localize a signal in both the time domain and frequency domain
 
-## B.Wavelet (Transform)
+## Part B. Improving Fourier transforms with wavelets
 
-* Improving Gabor Method.
+* Wavelet can refer to: 
+    * Small wave that vibrates for a while and then stops.
+    * The wavelet function, including a wavelet, its scale and the shift (position).
+    * The wavelet transform: the collection of several wavelet functions at different scales and positions. Used to decompose a signal (or image) in different resolutions.
+
+* There are (in this doc) four wavelet transforms, say:
+    1. Continous wavelet transform (CWT) (progressive)
+    2. Discrete wavelet transform (DWT)
+    3. Undecimated wavelet transform (UWT)
+    4. Starlet transform
+
+***
+*Asorted stuff from guide to wavelets*
+* The multires analysis is the sum of several wavelets. 
+* These wavelets are genrated from the mother wavelet by scaling and translation.
+
 
 ***
 ## Self unsolved questions
+* what does exactly represent the area under the curve of a wavelet (which we want to be 0, see wavelets section intro)?
 * How does an image become a signal?
